@@ -11,7 +11,7 @@ import DataSources from './datasources/DataSources';
 import Icon from '../icon/Icon';
 import CommonButton from '../common/CommonButton';
 
-class ImageMapConfigurations extends Component {
+class  ImageMapConfigurations extends Component {
 	static propTypes = {
 		canvasRef: PropTypes.any,
 		selectedItem: PropTypes.object,
@@ -32,7 +32,7 @@ class ImageMapConfigurations extends Component {
 		onChangeTab: activeKey => {
 			this.setState({
 				activeKey,
-			});
+			}); 
 		},
 		onCollapse: () => {
 			this.setState({

@@ -249,7 +249,14 @@ class ImageMapItems extends Component {
 			<div
 				key={item.name}
 				draggable
-				onClick={e => this.handlers.onAddItem(item, centered)}
+				onClick={e => {
+					if (item.type === "marker") { 
+						//Show popup to select asset 
+						console.log("Marker item selected");
+					};
+					this.handlers.onAddItem(item, centered)
+					}
+				}
 				onDragStart={e => this.events.onDragStart(e, item)}
 				onDragEnd={e => this.events.onDragEnd(e, item)}
 				className="rde-editor-items-item"
