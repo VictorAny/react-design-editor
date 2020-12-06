@@ -29,12 +29,6 @@ class App extends Component<any, IState> {
 		switch (activeEditor) {
 			case 'imagemap':
 				return <ImageMapEditor />;
-			case 'workflow':
-				return <WorkflowEditor />;
-			case 'flow':
-				return <FlowEditor />;
-			case 'hexgrid':
-				return <HexGrid />;
 		}
 	};
 

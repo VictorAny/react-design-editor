@@ -24,7 +24,7 @@ class ImageMapItems extends Component {
 
 	state = {
 		activeKey: [],
-		collapse: false,
+		collapse: true,
 		textSearch: '',
 		descriptors: {},
 		filteredDescriptors: [],

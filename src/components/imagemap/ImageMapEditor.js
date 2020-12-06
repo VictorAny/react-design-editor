@@ -720,7 +720,6 @@ class ImageMapEditor extends Component {
 				<span>{i18n.t('imagemap.imagemap-editor')}</span>
 			</React.Fragment>
 		);
-		const title = <ImageMapTitle title={titleContent} action={action} />;
 		const content = (
 			<div className="rde-editor">
 				<ImageMapItems
@@ -796,7 +795,7 @@ class ImageMapEditor extends Component {
 				/>
 			</div>
 		);
-		return <Container title={title} content={content} loading={loading} className="" />;
+		return <Container content={content} loading={loading} className="" />;
 	}
 }
 
